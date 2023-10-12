@@ -1,0 +1,76 @@
+/* Width has been adjusted all over the document to ensure that different fields do not butt against each other. */
+
+#menuBG {
+   width: fit-content;
+    margin:10px auto;
+}
+html {
+    height:100%;
+    background: linear-gradient(184deg, rgb(170, 86, 111) 24%, rgb(74, 81, 76) 81%);
+}
+
+@font-face {
+    font-family: 'CafeFrancoise';
+    src: url('../Font/CafeFrancoise_D.otf') 
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+body { 
+font-family: 'CafeFrancoise', sans-serif; 
+ color:bisque;
+ letter-spacing: 2px;
+} 
+/* I added letter spacing to increase readability of the font. sans-serif is the fallback font. */
+
+
+/* the tag frmMenu wraps the menu div classes, and I put it in a flex property to help with rendering correct spacing for the different menu areas. */
+#frmMenu {
+    display: flex;
+    margin: 0 auto;
+}
+
+#totalPrice{
+    width:200px;
+    margin:0 auto;
+    float:right;
+}
+
+.menu {
+    width:200px;
+    display: inline-block;
+}
+
+#showText {
+width:200px;
+height:190px;
+margin:0px auto;
+float:left;
+}
+
+#cart {
+    top:0; margin:0px auto;
+    width:400px;
+    height:200px;
+}
+
+#btnOrder {
+    margin:10px auto;
+    display: block;
+    height: 40px;
+    font-family: 'CafeFrancoise', sans-serif;
+    font-size: larger;
+    border-radius: 8px;
+  }
+
+  .centerthecolumns {
+    display: block;
+    margin: 0 auto;
+    width:fit-content;
+  }
+
+  /* this is to center the titles of the menu headings. */
+  .centerthecolumns h3 {
+    text-align: center;
+  }
