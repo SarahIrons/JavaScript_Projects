@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+    <html lang="en"></html>
+    
+    <head> 
+        <title>XMLHttpRequest Object</title> 
+    </head> 
+      
+    <body> 
+        <div id="gfgdemo"> 
+            <h1 style="color: green;"> 
+                GeeksforGeeks 
+            </h1> 
+            <h3> 
+                The XMLHttpRequest Object onreadystatechange Example 
+            </h3> 
+            <button type="button"
+                onclick="loadDoc()"> 
+                onreadystatechange demo 
+            </button> 
+        </div> 
+		<h5>"ReadyStateChange" would be the name of the event that happens when a function, called "onReadyStateChange" takes place. Stated another way--readystatechange is an event that happens in the DOM when the readystate changes. <h5>
+      
+        <script> 
+            function loadDoc() { 
+                const xmlhttp = new XMLHttpRequest(); 
+                xmlhttp.onreadystatechange = function() { 
+      
+                    // Only when readyState is 4 and status as 200, 
+                    // we can get proper response
+                    //definition of 'onreadystate': onreadystatechange: A function will be called whenever the readyState property changes.
+                    //NOTE NOTE NOTE : It is very important to note that the URL that is getting opened must be available on the same server. If not, it will throw cross domain error.
+                    //--info taken from Geeks for Geeks website.
+					//I also took guidance and wording from teamtreehouse.com for this assignment.
+                
+                    if(this.readyState == 4 && this.status == 200) { 
+                        document.getElementById("gfgdemo").innerHTML 
+                            = this.responseText; 
+                    } 
+                }; 
+                xmlhttp.open("GET", "gfg.html"); 
+                xmlhttp.send(); 
+            } 
+        </script> 
+		<!-- I had to work on de-bugging several ways on this assignment. I found guidance on Kinsta.come. Here is a walk-through of how it went and my notes on the assignment: 
+		XAMPP was not loading and I added a line to config the port to 'localhost:8080' instead of simply reading as 'localhost'. 
+		I saved and closed Apache and ran it again.  
+		In order to execute this assignment: I placed the two relevant HTML (files taken from GeeksforGeeks) into my computer's htdocs folder so that XAMPP would recognize where to retrieve the files. 
+		I ran the program through Microsoft Edge (which I think may have been on suggestion of one of the sites I reviewed when debugging--but I do not think it's necessary to run on this browser vs others. 
+		I was able to execute the function and run it; thus allowing the page to update its content!!.  -->
+		
+    </body> 
+    </html>
