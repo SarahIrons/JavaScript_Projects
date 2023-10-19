@@ -10,3 +10,5 @@ This is a project with HTML, CSS and JavaScript. The font for the heading is an 
 #[Pizza Menu App](PizzaProject) This is a clickable menu to order a pizza, made with HTML, CSS and JavaScript. JS functions allow for orders to be tallied with different toppings/size permutations. 
 
 #[AJAX assignment](AJAX) In this course section, we set up a XAMPP web server environment. This assignment demonstrated the onReadyState function.
+
+#[jQuery Assignment](jQueryChallenge) This exercise demonstrated calling jQuery functions: there is a brief demo of a click event, and an effect (show/hide of text).
