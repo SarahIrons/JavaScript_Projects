@@ -1,0 +1,66 @@
+body{
+    font-family:Verdana, Tahoma, sans-serif;
+}
+* {
+    box-sizing:border-box;
+}
+
+/* button to open the form, fixed at bottom right of page */
+.open-button {
+    background-color: darkseagreen;
+    color:black;
+    padding: 16px 20px;
+    border: none; 
+    cursor: pointer;
+    opacity: .8;
+    position: sticky;
+    bottom: 20px; 
+    right: 25px;
+    width: 250px;
+}
+
+/* the pop-up form is hidden by default. */
+.form-popup {
+    display: none;
+    position: fixed; 
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1; 
+    z-index: 9;
+}
+/* styles to the form container-- */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: lightcyan;
+}
+
+/* full width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0; 
+    border: none;
+    background: lightcyan;
+}
+
+/* when input gets focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: gainsboro;
+outline: none;
+}
+/* set a style for the submit/login button */
+.form-container .btn {
+    background-color: darkseagreen;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer; 
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: .8;
+}
+/* add a reddish background color to the cancel button */
+.form-container .cancel {
+    background-color: lightcoral;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <!-- The basis for code for creating this form was taken from CodePen. Here is the original site. https://codepen.io/thehelpfultipper/pen/wvpXmoo?editors=1100  The goals of the form are to be interactive (using javascript) and to be responsive to screen size. This is demonstrated by displaying an animation if screen size allows, as well as offering 2 possible user options for new vs returning user. -->
+    <meta charset="utf-8" name="viewport" width="device-width"  content="width=device-width, initial-scale=1" >
+
+    <script src="./JS/JavaScript_2.js" defer></script>
+    <link rel="stylesheet" href="./CSS/CSS_1.css">
+    <title>Javascript assignment 02</title>
+	</head> 
+<body>
+<!-- sign up form -->
+  <div id="form-container">
+    <div id="form-inner-container">
+
+      <div id="sign-up-container">
+        <h3>Get Started</h3>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name">
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email">
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+
+          <div id="form-controls">
+            <button type="submit">Sign Up</button>
+            <button type="button" id="toggleSignIn">Sign In</button>
+          </div>
+
+          <input type="checkbox" name="terms" id="terms">
+          <label for="terms">I agree to the <a href="#" class="termsLink">Terms of service</a> and <a href="#" class="termsLink">Privacy Policy</a>.</label>
+        </form>
+      </div>
+
+      <!-- Sign in form -->
+      <!-- There are three input fields; text for user name, email for user email and password for an entered password. Password will display dots instead of characters.  -->
+      <div id="sign-in-container" class="hide">
+        <h3>Welcome Back</h3>
+        <form>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="user@example.com">
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+
+<!-- 
+          The form controls styling adjusts the buttons and checkbox so that the checkbox and its label will lie beneath the buttons. the buttons are wrapped in div element (a block level element) with an id of form controls.  */ -->
+
+          <div id="form-controls">
+            <button type="submit">Sign In</button>
+            <button type="button" id="toggleSignUp">Sign Up</button>
+          </div>
+
+          <input type="checkbox" name="terms" id="terms">
+          <label for="terms">I agree to the <a href="#" class="termsLink">Terms of service</a> and <a href="#" class="termsLink">Privacy Policy</a>.</label>
+        </form>
+      </div>
+
+     <!-- face animation -->
+      <div id="animation-container">
+       <img src="./gif/happysad.gif" alt="Yellow happy face alternating with sad face; pink eyes and blue mouth"></img>
+    </div>
+</div>
+
+
+
+
+

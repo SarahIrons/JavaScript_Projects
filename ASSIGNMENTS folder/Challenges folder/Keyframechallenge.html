@@ -1,0 +1,34 @@
+<html lang= "en">
+    <head>
+        <meta charset="utf-8", name="viewport", width="device-width" content="text/html">
+        <title>Keyframe Animation Challenge</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border-radius: 100px;
+            background-color: red;
+            animation: circle 8s infinite;
+        }
+        @keyframes circle {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: yellow;
+            }
+            50% {
+                background-color: blue;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div></div>
+        <p>The @keyframes property has the option to divide the animation time into parts/percentage and perform an activity that is specified for that part of the whole duration of the animation.</p>
+    </body>
+</html>

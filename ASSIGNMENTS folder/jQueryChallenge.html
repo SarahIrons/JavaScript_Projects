@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   
+    <title>JQuery Challenge</title>
+    <script>
+        // Event setup using a convenience method. This is demonstrating an event of a button click on the page, prompting an alert to appear when the button with a unique ID is clicked.
+
+        $(document).ready(function () {
+            $("#landingbutton").click(function() {
+                alert( "You clicked a button");
+             
+            });
+
+         });
+         //this is a demonstration of the show/hide effects using jQuery.
+         
+   $(document).ready(function(){
+  $("#hidebutton").click(function(){
+    $("p").hide();
+  });
+  $("#showbutton").click(function(){
+    $("p").show();
+  });
+});
+</script>
+
+<body>
+<button id="landingbutton">Click this button.</button>
+<br>
+
+<p>If you click on the "Hide" button, I will disappear. If you click "Show" button I will reappear.</p>
+<br>
+
+<button id="hidebutton">Hide</button>
+<button id="showbutton">Show</button>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8", name="viewport", width="device-width">
+<html lang= "en">
+    <title>Parse Assignment</title>
+    <body>
+ 
+        <p> My cat's name is:  <span id="catStats">loading name</span></p>
+    <script>
+        var obj = JSON.parse('{"name":"Carlo","age": 13,"fur color":"gray"}');
+        document.getElementById("catStats").innerHTML = obj.name;
+        
+    </script>
+    </body>
+    </html>

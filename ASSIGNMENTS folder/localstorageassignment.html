@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8", name="viewport", width="device-width">
+<html lang= "en">
+    <title>Local Storage Method Assignment</title>
+    <body>
+        <p>My cat's name is: </p>
+        <p id="catStats"></p>
+    <script>
+        //set item//
+        localStorage.setItem("catname", "Webster");
+        //retrieve item//
+        document.getElementById("catStats").innerHTML = localStorage.getItem("catname");
+    </script>

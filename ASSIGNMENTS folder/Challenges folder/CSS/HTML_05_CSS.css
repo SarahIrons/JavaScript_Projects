@@ -1,0 +1,22 @@
+.carlo {
+				background-color:cadetblue;
+				color:blueviolet;
+				font-size:80px;
+				font-family:Georgia;
+				font-weight:bold;
+				text-align:center;
+				text-shadow:#FC0 1px 0 10px;
+}
+
+
+body {
+	opacity: 1;
+		transition:6s opacity;
+	  }
+	  
+body.fade-out {
+		opacity: 0;
+		transition: none;
+	  }
+
+

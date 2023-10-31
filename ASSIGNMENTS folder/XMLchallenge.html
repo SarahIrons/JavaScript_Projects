@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8", name="viewport", width="device-width">
+<html lang= "en">
+    <body>
+<p id="XML_Example"></p>
+<script>
+var XML_Parser, XML_Document
+
+//Creates a text string
+var Movie = "<movie>"+
+    "<title>Casino</title>" +
+    "<director>Martin Scorsese</director>"+
+    "<starring>Robert DeNiro</starring>" +
+    "<year>1995</year>" +
+    "</movie>"
+
+//Creates an XML DOM parser
+XML_Parser= new DOMParser();
+
+//Creates a new XML DOM object using the text string 
+XML_Document=XML_Parser.parseFromString(Movie,"text/xml");
+document.getElementById("XML_Example").innerHTML=
+XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+</script>
+
+
+    </body>
