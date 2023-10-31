@@ -1,0 +1,31 @@
+html, body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: 600;
+  /* the scroll behavior attribute allows for smoother scrolling */
+  scroll-behavior: smooth;
+  background-color: wheat;
+}
+
+ul {
+    list-style: none;
+    background-color: peachpuff;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  #home {
+    height: 50px;
+    background-color: peachpuff
+  }
+  
+  #contact {
+    height: 50px;
+    background-color: peachpuff;
+  }
+
+  #about {
+    height: 50px;
+    background-color: peachpuff;
+  }
