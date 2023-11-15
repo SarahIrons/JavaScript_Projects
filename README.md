@@ -13,4 +13,4 @@ This is a project with HTML, CSS and JavaScript. The font for the heading and th
 
 #[jQuery Assignment](jQueryChallenge) This exercise demonstrated calling jQuery functions: there is a brief demo of a click event, and an effect (show/hide of text).
 
-#[Updated Portfolio Site with JS](.Portfolio) We revisited/updated our project from our HTML/CSS course and added JavaScript to it. The personal portfolio page has a slideshow and a contact form.
+#[Updated Portfolio Site with JS](Portfolio) We revisited/updated our project from our HTML/CSS course and added JavaScript to it. The personal portfolio page has a slideshow and a contact form.
